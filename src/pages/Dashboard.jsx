@@ -1,16 +1,15 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
-import Hero from '../components/Hero'
+import Navbaralt from '../components/Navbaralt'
 import Homealt from '../components/Homealt'
 
-const Home = () => {
+const Dashboard = () => {
   return (
     <>
       <Navbar/>
-      <Hero/>
       <Homealt/>
     </>
   )
 }
 
-export default Home
+export default Dashboard

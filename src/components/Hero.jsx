@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link, useNavigate } from 'react-router-dom'
+import Homealt from './Homealt'
 
 const Hero = () => {
   return (
@@ -7,9 +9,9 @@ const Hero = () => {
         <div className='xl:text-[70px] lg:text-[60px] text-[50px] font-bold '>Together is a wonderful </div>
         <div className='xl:text-[70px] lg:text-[60px] text-[50px] font-bold'>place to be :)</div>
         <div className='pt-[100px]'>
-        <button className='xl:text-[35px] text-[25px] border-[3px] py-2 px-6 rounded-[35px] border-blue-600'>
+        <Link to='/login'><button className='xl:text-[35px] text-[25px] border-[3px] py-2 px-6 rounded-[35px] border-blue-600  hover:bg-blue-600' >
             Connect with Linkedin
-        </button>
+        </button></Link>
       </div>
       </div>
       
