@@ -1,11 +1,11 @@
 import React from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import Homealt from './Homealt'
 
 const Hero = () => {
   return (
     <>
-      <div className="block xl:pt-[10%] lg:pt-[10%] md:pt-[15%] pt-[25%] pl-[40px] text-white bg-black">
+      <div className="block xl:pt-[10%] lg:pt-[10%] md:pt-[15%] pt-[25%] pl-[40px] text-white">
         <div className='xl:text-[70px] lg:text-[60px] text-[50px] font-bold '>Together is a wonderful </div>
         <div className='xl:text-[70px] lg:text-[60px] text-[50px] font-bold'>place to be :)</div>
         <div className='pt-[100px]'>

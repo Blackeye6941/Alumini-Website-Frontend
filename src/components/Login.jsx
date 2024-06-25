@@ -54,7 +54,7 @@ const Login = () => {
 
   return (
     <>
-      <div className="text-center my-[30%] xl:my-[140px] lg:my-[140px] md:my-[140px] pt-8 pb-[40px] bg-black flex flex-col mx-[60px] xl:mx-[30%] lg:mx-[30%] md:mx-[25%] rounded-[40px]">
+      <div className="text-center my-[30%] xl:my-[140px] lg:my-[140px] md:my-[140px] pt-8 pb-[40px] bg-black flex flex-col mx-[60px] xl:mx-[30%] lg:mx-[30%] md:mx-[25%] rounded-[40px] opacity-60">
         <h1 className="text-[2em] mb-10 text-white">Login</h1>
       <form onSubmit={handleSubmit}>
         <div ref = {errRef} className={err ? "errmsg text-white" : "offscreen"} >{err}</div>

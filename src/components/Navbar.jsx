@@ -1,10 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import 'react-icons/fa'
+import { FaSun } from 'react-icons/fa'
 
 const Navbar = () => {
+  const style = {position : "absolute", transform : "translate(-10px,5px)"}
   return (
     <>
-      <nav className=' bg-gray-600'>
+      <nav className=' bg-black opacity-65'>
         <div className="flex justify-between pt-3">
         <h1 className='text-[40px]  pl-[40px] text-white'>AMI</h1>
         <div className=' '>
@@ -14,7 +17,7 @@ const Navbar = () => {
             </ul>
         </div>
         <div className=' pt-[18px] text-white pr-8'>
-            sun.img
+            <FaSun size={20} style={style}/>
         </div>
         </div>
       </nav>
