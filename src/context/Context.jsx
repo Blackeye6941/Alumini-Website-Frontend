@@ -14,8 +14,8 @@ useEffect(() => {
 }, []);
 
 return (
-    <Context.Provider value ={{data, setData}}>
+    <userContext.Provider value ={{data, setData}}>
         {children}
-    </Context.Provider>
+    </userContext.Provider>
 );
 };

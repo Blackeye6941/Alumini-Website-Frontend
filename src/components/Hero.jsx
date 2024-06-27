@@ -1,11 +1,20 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import Homealt from './Homealt'
+import { userContext } from '../context/Context'
+import {Virtuoso} from 'react-virtuoso'
+
 
 const Hero = () => {
+  const {data} = useContext(userContext);
   return (
     <>
-      <div className="block xl:pt-[10%] lg:pt-[10%] md:pt-[15%] pt-[25%] pl-[40px] text-white">
+      {data && data.length > 0 ? (
+        <Virtuoso>
+
+        </Virtuoso>
+      ) : (
+        <div className="block xl:pt-[10%] lg:pt-[10%] md:pt-[15%] pt-[25%] pl-[40px] text-white">
         <div className='xl:text-[70px] lg:text-[60px] text-[50px] font-bold '>Together is a wonderful </div>
         <div className='xl:text-[70px] lg:text-[60px] text-[50px] font-bold'>place to be :)</div>
         <div className='pt-[100px]'>
@@ -15,6 +24,7 @@ const Hero = () => {
       </div>
       </div>
       
+      )}
     </>
   )
 }

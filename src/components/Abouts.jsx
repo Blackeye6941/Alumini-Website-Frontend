@@ -3,7 +3,7 @@ import React from 'react'
 const Abouts = () => {
   return (
     <>
-      About Page
+      <div className='text-white text-[40px]'>About page</div>
     </>
   )
 }

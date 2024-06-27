@@ -1,11 +1,14 @@
 import Layout from "./layout/Layout"
 import "./App.css"
+import { ContextProvider } from "./context/Context"
 
 function App() {
 
   return (
     <>
-      <Layout/>
+      <ContextProvider>
+        <Layout/>
+      </ContextProvider>
     </>
   )
 }
